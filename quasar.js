@@ -13,8 +13,8 @@ module.exports = {
 
   extends: [
     'plugin:@typescript-eslint/recommended',
-    'plugin:vue/vue3-recommended',
-    'prettier',
+    'plugin:vue/vue3-essential',
+    'standard',
   ],
 
   plugins: [
@@ -40,24 +40,14 @@ module.exports = {
 
   rules: {
     quotes: ['warn', 'single', { avoidEscape: true }],
-    // TODO: The following are to be turned off in the future for a refactor
-    'vue/multi-word-component-names': 'off',
-    'vue/no-ref-as-operand': 'off',
-    'vue/no-v-text-v-html-on-component': 'off',
-    '@typescript-eslint/no-unused-vars': 'off',
-    '@typescript-eslint/no-empty-function': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
-    // end
-    'vue/v-on-event-hyphenation': 'off',
-    'vue/no-v-model-argument': 'off',
-    'vue/no-mutating-props': 'off',
-    'vue/no-unused-components': 'off',
-    'vue/order-in-components': 'off',
-    'vue/no-v-model-argument': 'off',
     'vue/no-v-html': 'off',
-    'vue/no-v-model-argument': 'off',
-    'vue/no-multiple-template-root': 'off',
     'vue/attributes-order': 'off',
+    'vue/no-mutating-props': 'off',
+    'vue/no-v-model-argument': 'off',
+    'vue/order-in-components': 'off',
+    'vue/no-unused-components': 'off',
+    'vue/v-on-event-hyphenation': 'off',
+    'vue/no-multiple-template-root': 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'vue/max-attributes-per-line': [
       'warn',
@@ -66,7 +56,6 @@ module.exports = {
         multiline: 1,
       },
     ],
-
     'vue/first-attribute-linebreak': [
       'warn',
       {
@@ -74,7 +63,6 @@ module.exports = {
         multiline: 'below',
       },
     ],
-
     'vue/html-closing-bracket-newline': [
       'warn',
       {
@@ -82,7 +70,6 @@ module.exports = {
         multiline: 'always',
       },
     ],
-
     'vue/html-indent': [
       'warn',
       2,
