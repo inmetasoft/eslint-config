@@ -1,28 +1,21 @@
-# Inmeta ESLint config
+# eslint-config-inmeta
 
-## Whats included?
+Default INMETA ESLint rules for different frameworks/projects
 
-- Standard config base;
-- Node plugin;
-- Vue plugin;
-- React plugin;
-- React Hooks plugin;
-- JSX a11y plugin;
-- Prettier;
-
-## Setup
+## Usage
 
 1. Install the dependencies
 ```
-npm i -D eslint @inmetasoft/eslint-config
+yarn add eslint @inmetasoft/eslint-config --dev
 ```
 
-2. Create a `.eslintrc.json` file extending the config:
+2. Create a [ESLint config file](https://eslint.org/docs/latest/use/configure/) extending the config:
 ```
 {
-  "extends": "@inmetasoft/eslint-config/react"
-  // "extends": "@inmetasoft/eslint-config/node"
+  "extends": "@inmetasoft/eslint-config/PLATFORM"
 }
 ```
 
-> You can also use a `.eslintrc.js` instead of JSON if you prefer.
+Where ``PLATFORM`` is one of:
+- node
+- quasar
