@@ -1,15 +1,12 @@
 {
   "name": "@inmeta/eslint-config-base",
   "main": "index.js",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "INMETA shared ESLint config",
   "license": "MIT",
   "repository": "https://github.com/inmetasoft/eslint-config",
   "author": "Gabriel <gabriel-peruchi@hotmail.com> (https://github.com/gabriel-peruchi)",
   "homepage": "https://github.com/inmetasoft/eslint-config/tree/master/packages/base#README",
-  "scripts": {
-    "release": "release-it"
-  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
@@ -17,9 +14,6 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.2.0",
     "eslint-plugin-promise": "^6.0.0"
-  },
-  "devDependencies": {
-    "release-it": "^16.0.0"
   },
   "peerDependencies": {
     "eslint": "^7.23.0 || ^8.0.0",
@@ -29,8 +23,5 @@
     "typescript": {
       "optional": true
     }
-  },
-  "release-it": {
-    "git": false
   }
 }

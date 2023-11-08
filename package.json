@@ -5,17 +5,5 @@
     "packages/node",
     "packages/quasar"
   ],
-  "scripts": {
-    "release": "yarn workspaces foreach -A run release && release-it"
-  },
-  "devDependencies": {
-    "@release-it/bumper": "^5.1.0",
-    "release-it": "^16.0.0"
-  },
-  "release-it": {
-    "git": {
-      "requireCleanWorkingDir": false
-    }
-  },
   "packageManager": "yarn@4.0.1"
 }
