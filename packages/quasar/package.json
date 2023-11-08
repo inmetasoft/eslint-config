@@ -1,0 +1,37 @@
+{
+  "name": "@inmeta/eslint-config-quasar",
+  "main": "index.js",
+  "version": "1.1.0",
+  "description": "INMETA ESLint config for Quasar",
+  "license": "MIT",
+  "repository": "https://github.com/inmetasoft/eslint-config/tree/master/packages/quasar",
+  "author": "Gabriel <gabriel-peruchi@hotmail.com> (https://github.com/gabriel-peruchi)",
+  "homepage": "https://github.com/inmetasoft/eslint-config/tree/master/packages/quasar#README",
+  "scripts": {
+    "release": "release-it"
+  },
+  "dependencies": {
+    "@inmeta/eslint-config-base": "1.1.0",
+    "eslint-plugin-vue": "^9.5.1"
+  },
+  "devDependencies": {
+    "release-it": "^16.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^7.23.0 || ^8.0.0",
+    "typescript": ">=3.3.1"
+  },
+  "release-it": {
+    "git": false,
+    "plugins": {
+      "@release-it/bumper": {
+        "out": {
+          "file": "package.json",
+          "path": [
+            "dependencies.@inmeta/eslint-config-base"
+          ]
+        }
+      }
+    }
+  }
+}

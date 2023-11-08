@@ -12,21 +12,16 @@ module.exports = {
   },
 
   extends: [
-    'plugin:@typescript-eslint/recommended',
+    '@inmeta/eslint-config-base',
     'plugin:vue/vue3-essential',
-    'standard',
   ],
 
   plugins: [
-    // required to apply rules which need type information
-    '@typescript-eslint',
-    // https://eslint.vuejs.org/user-guide/#why-doesn-t-it-work-on-vue-file
-    // required to lint *.vue files
     'vue',
   ],
 
   globals: {
-    ga: 'readonly', // Google Analytics
+    ga: 'readonly',
     cordova: 'readonly',
     __statics: 'readonly',
     __QUASAR_SSR__: 'readonly',

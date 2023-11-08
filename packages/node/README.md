@@ -1,10 +1,10 @@
-<h1 align="center">@inmeta/eslint-config</h1>
+<h1 align="center">@inmeta/eslint-config-node</h1>
 
 <p align="center">
   <img src="https://public-assets-inmeta.s3.amazonaws.com/app-logo.png" width="120">
   <br>
   <br>
-  <em>Default INMETA ESLint rules for <br>different frameworks/projects</em>
+  <em>INMETA ESLint rules <br>for <a href="https://nodejs.org/en/">Node</a> projects</em>
   <br>
 </p>
 
@@ -12,13 +12,9 @@
 ![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 
-## Usage
+# Installing
 
-This is a monorepo, currently with two packages:
-- ``@inmeta/eslint-config-node``
-- ``@inmeta/eslint-config-quasar``
-
-1. Install one of the packages (e.g. ``@inmeta/eslint-config-node``)
+1. Install ``@inmeta/eslint-config-node``
 ```sh
 yarn add eslint @inmeta/eslint-config-node --dev
 ```

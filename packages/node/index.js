@@ -3,26 +3,30 @@ module.exports = {
     es2021: true,
     node: true,
   },
+
   extends: [
-    'standard',
-    'plugin:@typescript-eslint/recommended',
+    '@inmeta/eslint-config-base',
     'plugin:prettier/recommended',
   ],
+
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
+
   parser: '@typescript-eslint/parser',
+
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+
   plugins: [
     'prettier',
     'unused-imports',
-    '@typescript-eslint',
     'eslint-plugin-import-helpers',
   ],
+
   rules: {
     'prettier/prettier': [
       'error',

@@ -1,47 +1,21 @@
 {
-  "name": "@inmetasoft/eslint-config",
-  "version": "1.1.0",
-  "private": false,
-  "description": "ESLint configuration used by Inmeta.",
-  "main": "index.js",
-  "license": "MIT",
-  "repository": "https://github.com/inmetasoft/eslint-config",
-  "author": "Gabriel <gabriel-peruchi@hotmail.com> (https://github.com/gabriel-peruchi)",
-  "homepage": "https://github.com/inmetasoft/eslint-config#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
+  "private": true,
+  "workspaces": [
+    "packages/base",
+    "packages/node",
+    "packages/quasar"
+  ],
   "scripts": {
-    "release": "release-it"
-  },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.49.0",
-    "@typescript-eslint/parser": "^5.49.0",
-    "eslint": "^7.29.0 || ^8.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-import-helpers": "^1.1.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-n": "^15.2.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.30.0",
-    "eslint-plugin-react-hooks": "^4.5.0",
-    "eslint-plugin-unused-imports": "^2.0.0",
-    "eslint-plugin-vue": "^9.5.1",
-    "prettier": "^2.6.2"
+    "release": "yarn workspaces foreach -A run release && release-it"
   },
   "devDependencies": {
-    "release-it": "^15.10.1"
+    "@release-it/bumper": "^5.1.0",
+    "release-it": "^16.0.0"
   },
-  "peerDependencies": {
-    "eslint": "^7.23.0 || ^8.0.0",
-    "typescript": ">=3.3.1"
-  },
-  "peerDependenciesMeta": {
-    "typescript": {
-      "optional": true
+  "release-it": {
+    "git": {
+      "requireCleanWorkingDir": false
     }
-  }
+  },
+  "packageManager": "yarn@4.0.1"
 }
