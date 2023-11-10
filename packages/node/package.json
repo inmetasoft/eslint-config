@@ -1,7 +1,7 @@
 {
   "name": "@inmeta/eslint-config-node",
   "main": "index.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "INMETA ESLint config for Node",
   "license": "MIT",
   "repository": "https://github.com/inmetasoft/eslint-config/tree/master/packages/node",
